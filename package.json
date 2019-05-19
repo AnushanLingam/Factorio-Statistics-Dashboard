@@ -4,7 +4,32 @@
   "description": "",
   "main": "server/server.js",
   "scripts": {
-    "start": "nodemon server/server.js"
+    "start": "node server/server.js",
+    "dev": "webpack-dev-server --config ./webpack.config.js --mode development",
+    "build:prod": "webpack -p --env production --mode production",
+    "launch": "npm run build:prod && npm start"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "react-hot-loader": "^4.8.4",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.1",
+    "webpack-dev-server": "^3.3.1"
+  },
+  "dependencies": {
+    "express": "^4.17.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-redux": "^7.0.3",
+    "react-router-dom": "^5.0.0",
+    "redux": "^4.0.1",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "socket.io": "^2.2.0",
+    "styled-components": "^4.2.0"
   },
   "repository": {
     "type": "git",
