@@ -1,0 +1,19 @@
+{
+  "name": "factorio_statsdashboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "nodemon server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnushanLingam/Factorio-Statistics-Dashboard.git"
+  },
+  "author": "Anushan Lingam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnushanLingam/Factorio-Statistics-Dashboard/issues"
+  },
+  "homepage": "https://github.com/AnushanLingam/Factorio-Statistics-Dashboard#readme"
+}
